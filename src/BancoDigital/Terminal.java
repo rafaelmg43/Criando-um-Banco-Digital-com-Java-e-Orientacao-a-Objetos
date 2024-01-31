@@ -13,6 +13,9 @@ public class Terminal {
         cc.depositar(100);
         Conta cp = new ContaPoupanca(Rafael);
         cc.transferir(50,cp);
+        Banco lista = new Banco(cc);
+        lista.getContas();
+
 
 
         cc.ImprimirExtrato();

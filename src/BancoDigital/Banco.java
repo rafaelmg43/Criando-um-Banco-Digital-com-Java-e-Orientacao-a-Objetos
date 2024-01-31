@@ -1,13 +1,18 @@
 package BancoDigital;
 import java.util.List;
+
+import BancoDigital.Clientes.Cliente;
 import BancoDigital.Contas.Conta;
+import BancoDigital.Contas.ContaCorrente;
+import BancoDigital.Contas.ContaPoupanca;
 
 public class Banco {
 
     private String nome;
     private List<Conta> contas;
 
-    public Banco() {
+    public Banco(Conta contas) {
+        this.contas = (List<Conta>) contas;
     }
 
     public String getNome() {
@@ -25,4 +30,5 @@ public class Banco {
     public void setContas(List<Conta> contas) {
         this.contas = contas;
     }
+
 }
